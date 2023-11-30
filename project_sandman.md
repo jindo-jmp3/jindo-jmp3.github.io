@@ -5,10 +5,11 @@ We have 113K college basketball bets that represent all bets from a single agenc
 The *objective* is to produce new odds after each bet that is more accurate than the consensus provided.
 
 ### Parameters
-Models built for college basketball main markets, specifically:
-  - Full Game, 1st Half, 2nd Half for
-  - Handicap, Moneyline, Game Total
-  = 9 models in total
+Build a model for the college basketball main markets, specifically:
+  - Full Game Handicap, Moneyline, Game Total
+  = 3 models
+
+Assume the simplest case where the target for each model is whether the home (or under) wins given a line (or no line / line of -0.5 in the case of a Moneyline).
 
 Models should be implemented in R or Python and they improve vs consensus odds in 3 metrics
   - Brier
